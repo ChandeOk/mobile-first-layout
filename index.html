@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/main.js" defer></script>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="logo" />
+      </div>
+      <div class="contacts">
+        <h2 class="contacts__number">+7(863) 000 00 00</h2>
+        <h3 class="contacts__city">Ростов-на-Дону</h3>
+      </div>
+    </header>
+    <main class="main">
+      <div class="image-container">
+        <img src="assets/1.jpg" alt="cabinet" class="image-container__img" />
+      </div>
+      <article class="info">
+        <h2 class="info__header">Многопрофильная клиника для детей и взрослых</h2>
+        <p class="info__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua
+        </p>
+      </article>
+      <div class="card">
+        <div class="card__image-container">
+          <img src="/assets/doctor-working-table.jpg" alt="#" class="card__image" />
+        </div>
+        <div class="card__data">
+          <h2 class="card__data-header">CHECK UP</h2>
+          <h3 class="card__data-header-info">для мужчин</h3>
+          <ul class="card__data-details">
+            <li class="card__data-details-item">
+              <span class="card__data-details-space"></span> Гормональный скрининг
+            </li>
+            <li class="card__data-details-item">
+              <span class="card__data-details-space"></span>Тестостерон
+            </li>
+            <li class="card__data-details-item">
+              <span class="card__data-details-space"></span>Свободный тестостерон
+            </li>
+            <li class="card__data-details-item">
+              <span class="card__data-details-space"></span>Глобулин, связывающий половые гормоны
+            </li>
+          </ul>
+          <div class="card__data-price">
+            <p class="card__data-price-actual">Всего 2800₽</p>
+            <p class="card__data-price-old">3500₽</p>
+          </div>
+        </div>
+        <div class="card__buttons">
+          <button class="card__buttons-appointment">Записаться</button>
+          <button class="card__buttons-more">Подробнее</button>
+        </div>
+      </div>
+      <div class="pagination">
+        <img src="assets/arrow-left.svg" alt="arrow-left" class="pagination__arrow-left" />
+
+        <div class="pagination__page">
+          <span class="pagination__page-current">1</span>
+          <span class="pagination__page-all">/4</span>
+        </div>
+
+        <img src="assets/arrow-right.svg" alt="arrow-right" />
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="nav">
+        <div class="nav__contacts-container">
+          <img src="/assets/LOGO2.svg" alt="logo" class="nav__logo-image" />
+          <div class="nav__socials">
+            <img src="/assets/instagramm.png" alt="instagram-logo" class="nav__sosials-image" />
+            <img src="/assets/whatsapp.png" alt="whatsapp-logo" class="nav__sosials-image" />
+            <img src="/assets/telegram.png" alt="telegram-logo" class="nav__sosials-image" />
+          </div>
+        </div>
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a href="#">О клинике </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#">Услуги </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#">Специалисты </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#">Цены </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#">Контакты </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <nav class="menu-slide">
+      <ul class="menu-slide__list">
+        <li class="menu-slide__list-item">
+          <a href="#">О клинике </a>
+        </li>
+        <li class="menu-slide__list-item">
+          <a href="#">Услуги </a>
+        </li>
+        <li class="menu-slide__list-item">
+          <a href="#">Специалисты </a>
+        </li>
+        <li class="menu-slide__list-item">
+          <a href="#">Цены </a>
+        </li>
+        <li class="menu-slide__list-item">
+          <a href="#">Контакты </a>
+        </li>
+      </ul>
+      <button class="menu-slide__button">Записаться на прием</button>
+    </nav>
+  </body>
+</html>

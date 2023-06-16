@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 35px;
+
+  &__page {
+    display: flex;
+    // align-items: center;
+
+    &-all {
+      color: #c0c0c0;
+    }
+  }
+
+  img {
+    cursor: pointer;
+  }
+}

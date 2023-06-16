@@ -1,0 +1,98 @@
+.header {
+  padding: 20px 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+.burger {
+  height: 26px;
+  width: 37px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  cursor: pointer;
+
+  &__line {
+    // position: absolute;
+    width: 37px;
+    height: 4px;
+    background: #1fa181;
+    top: 29px;
+    transition: transform 1s ease-in-out;
+    transition: width 1s ease-in-out;
+  }
+  &__line:nth-child(1) {
+    transform-origin: top left;
+    transform: rotate(0);
+    transition: transform 1s ease-in-out;
+  }
+  &__line:nth-child(3) {
+    transform-origin: bottom left;
+    transform: rotate(0);
+    transition: transform 1s ease-in-out;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  &__number {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__city {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+.open-menu {
+  // transform: translateY(25%);
+  // & div:nth-child(2) {
+  //   // display: none;
+  //   // position: absolute;
+  //   transform: rotateZ(45deg);
+  // }
+  // & div:nth-child(3) {
+  //   // transform: translateY(-50%);
+  //   display: none;
+  // }
+  // & div:nth-child(1) {
+  //   position: absolute;
+  //   transform: rotateZ(-45deg);
+  //   // display: none;
+  //   // transform: rotateZ(90deg);
+
+  // }
+  // transition: transform 1s ease-in-out;
+}
+.open-menu {
+  // transform: translateY(25%);
+  & span:nth-of-type(1) {
+    // display: none;
+    // position: absolute;
+    // transform: rotate(45deg);
+    transition: transform 1s ease-in-out;
+    transform: rotate(39deg);
+    transform-origin: top left;
+  }
+  & span:nth-of-type(2) {
+    // transform: translateY(-50%);
+    // opacity: 0%;
+    // position: fixed;
+    transition: width 1s ease-in-out;
+    // transform: rotate(-45deg);
+    width: 0;
+  }
+  & span:nth-of-type(3) {
+    transition: transform 1s ease-in-out;
+    // display: none;
+    transform: rotate(-39deg);
+    transform-origin: bottom left;
+  }
+}
